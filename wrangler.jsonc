@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-task-manager",
+  "main": "src/server.ts",
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Workers AI binding — remote: true lets `npm run dev` proxy to Cloudflare
+  "ai": { "binding": "AI", "remote": true },
+
+  // Durable Object for the chat agent (provides memory + state)
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "TaskManagerAgent",
+        "name": "TaskManagerAgent"
+      }
+    ]
+  },
+
+  // Required migration for SQLite-backed Durable Objects
+  "migrations": [
+    {
+      "new_sqlite_classes": ["TaskManagerAgent"],
+      "tag": "v1"
+    }
+  ]
+}
