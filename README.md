@@ -193,10 +193,7 @@ This project was developed using AI-assisted coding with **Kiro** (Claude-based 
 - **Code Generation**: React components, CSS styling, server logic
 - **Documentation**: README, code comments, deployment scripts
 
-### Prompt History
-See [PROMPT_HISTORY.md](./PROMPT_HISTORY.md) for detailed conversation excerpts showing the collaborative development process.
 
-> **Note**: AI assistance accelerated development significantly, but the project vision, feature decisions, and quality standards were driven by the developer.
 
 ## 📄 License
 
