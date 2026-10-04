@@ -179,14 +179,24 @@ The agent implements these tools:
 
 ## 🤖 AI-Assisted Development
 
-> **Note**: This project was developed with AI assistance using Kiro (Claude-based AI coding assistant). The AI helped with:
-> - Architecture design and implementation patterns
-> - Debugging streaming/WebSocket issues
-> - Writing React components and CSS styling
-> - Crafting effective LLM prompts for task management
-> - Documentation and code organization
->
-> The prompt history demonstrates iterative development, debugging sessions, and feature additions through conversational AI collaboration.
+This project was developed using AI-assisted coding with **Kiro** (Claude-based AI coding environment).
+
+### Developer's Role
+- **Vision & Requirements**: Defined the 4 core requirements (LLM, Durable Objects, Chat UI, Persistent State)
+- **Feature Direction**: Requested due dates, categories, subtasks, smart suggestions, interactive sidebar
+- **Architecture Decisions**: Chose simplified HTTP + WebSocket hybrid approach after evaluating options
+- **Quality Assurance**: Tested features, reported issues, guided iterations
+
+### AI's Role
+- **Rapid Implementation**: Translated requirements into working code quickly
+- **Debugging**: Investigated streaming bugs, WebSocket issues, tool call problems
+- **Code Generation**: React components, CSS styling, server logic
+- **Documentation**: README, code comments, deployment scripts
+
+### Prompt History
+See [PROMPT_HISTORY.md](./PROMPT_HISTORY.md) for detailed conversation excerpts showing the collaborative development process.
+
+> **Note**: AI assistance accelerated development significantly, but the project vision, feature decisions, and quality standards were driven by the developer.
 
 ## 📄 License
 
